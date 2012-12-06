@@ -61,7 +61,7 @@ namespace karthik20522
             {
                 if (vColor.Value.Contains(color.Substring(1)))
                 {
-                    return vColor.Value;
+                    return color.Substring(1);
                 }
                 else
                 {
@@ -71,10 +71,10 @@ namespace karthik20522
 
                         if (diff > (diff = Math.Pow(c.R - validColor.R, 2) + Math.Pow(c.G - validColor.G, 2) + Math.Pow(c.B - validColor.B, 2)))
                         {
-                            if (temp.ContainsKey(vColor.Value))
-                                temp[vColor.Value] = diff;
+                            if (temp.ContainsKey(colorHex))
+                                temp[colorHex] = diff;
                             else
-                                temp.Add(vColor.Value, diff);
+                                temp.Add(colorHex, diff);
                         }
                     }
                 }
