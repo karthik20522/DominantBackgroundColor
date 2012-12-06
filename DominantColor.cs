@@ -35,7 +35,7 @@ namespace karthik20522
                         .OrderByDescending(x => x.Count)
                         .Take(1); //take top color
 
-                return GetClosestColor(ColorTranslator.ToHtml(colorsWithCount.First().Color));
+                return ColorTranslator.ToHtml(colorsWithCount.First().Color);
             }
         }
 
