@@ -51,7 +51,7 @@ namespace karthik20522
             }
         }
 
-        private string GetClosestColor(string color)
+        public string GetClosestColor(string color)
         {
             var c = ColorTranslator.FromHtml(color);
             double diff = 200000;
