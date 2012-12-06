@@ -61,7 +61,7 @@ namespace karthik20522
             {
                 if (vColor.Value.Contains(color.Substring(1)))
                 {
-                    return color.Substring(1);
+                    return color;
                 }
                 else
                 {
